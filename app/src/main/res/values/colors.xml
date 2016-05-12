@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="session_row_color">#ff0</color>
+    <color name="session_text_color">#339</color>
+
+    <color name="beautiful_yellow">#f1c40f</color>
+
+    <color name="session_view_background">@color/beautiful_yellow</color>
+    <color name="session_view_text_color">#ecf0f1</color>
+    <color name="material_button_primary">#f39c12</color>
+    <color name="material_button_ripple">#f3126c</color>
+
+    <color name="light_blue">#3498DB</color>
+    <color name="light_grey">#ECF0F1</color>
+    <color name="lightSeaGreen">#1BA39C</color>
+    <color name="midnightBlue">#2C3E50</color>
+    <color name="textColorWhite">#ecf0f1</color>
+    <color name="background">#f2f8f8</color>
+    <color name="buttonColor">#6bc2be</color>
+    <color name="wetAsphalt">#67809F</color>
+
+
+</resources>

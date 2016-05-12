@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+
+    <RelativeLayout
+        android:id="@+id/titleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightSeaGreen">
+
+        <TextView
+            android:id="@+id/titleEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Title"
+            android:textColor="@color/background"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Edit"
+            android:textColor="@color/buttonColor"
+            android:textSize="20sp" />
+
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/addSessionButton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="10dp">-->
+
+            <ImageView
+                android:id="@+id/addSessionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/add"
+                android:padding="15dp"
+                android:layout_marginRight="15dp"
+
+                />
+        <!--</RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/totalTimeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/midnightBlue"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/totalTimeCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Total"
+
+            android:textColor="@color/background"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/totalTimeContainer"
+        android:layout_below="@id/titleContainer" />
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@id/totalTimeContainer"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginBottom="3dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:src="@drawable/ic_add_black_24dp" />-->
+
+
+</RelativeLayout>

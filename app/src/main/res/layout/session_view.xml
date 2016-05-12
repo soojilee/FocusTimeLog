@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/sessionViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/sessionStartDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="title"
+                android:textColor="@color/midnightBlue"
+                android:textSize="@dimen/session_text_size" />
+
+            <TextView
+                android:id="@+id/sessionDurationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/sessionStartDateTextView"
+                android:layout_marginTop="10dp"
+                android:text="Some Placeholder Text"
+                android:textColor="@color/midnightBlue"
+                android:textSize="@dimen/session_total_text_size" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/sessionViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:text="Date"
+            android:textColor="@color/midnightBlue"
+            android:textSize="@dimen/session_text_size" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/sessionViewContainer"
+        android:background="@color/wetAsphalt">
+
+    </View>
+</LinearLayout>

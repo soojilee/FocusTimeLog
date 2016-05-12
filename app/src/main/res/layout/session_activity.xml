@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/categoryBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/lightSeaGreen"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Title"
+            android:textColor="@color/background"
+            android:textSize="@dimen/bar_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sessionNumberTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryBar"
+        android:background="@color/background"
+        android:padding="7dp"
+        android:text="session name"
+        android:textSize="18sp"
+        android:textColor="@color/midnightBlue" />
+
+
+    <TextView
+        android:id="@+id/stop_watch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sessionNumberTextView"
+        android:background="@color/background"
+        android:textColor="@color/midnightBlue"
+        android:gravity="center"
+        android:padding="40dp"
+        android:text="00:00:00"
+        android:textSize="45sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/stop_watch"
+        android:background="@color/wetAsphalt">
+
+    </View>
+
+
+
+    <RelativeLayout
+        android:id="@+id/totalTimeContainerSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/midnightBlue"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/totalTimeSession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Total"
+
+            android:textColor="@color/background"
+            android:textSize="@dimen/bar_text_size" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/session_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/totalTimeContainerSession"
+        android:layout_below="@id/stop_watch"
+        android:background="@color/background">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/session_recycler_view"
+        android:background="@color/wetAsphalt">
+
+    </View>
+
+
+</RelativeLayout>
